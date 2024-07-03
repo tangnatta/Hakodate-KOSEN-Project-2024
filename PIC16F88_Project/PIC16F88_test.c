@@ -4,6 +4,11 @@
 
 #include <xc.h>                 //xc.hを定義する
 
+/*
+ * Code for Project @Hakodate KOSEN 
+ * Authors: Nattavee Sunitsakul (@tangnatta)
+ */
+
 
 //CONFIG1 REG・・・・・・・・・・・・・・・・・・・・・・・・・・・・・・・・・・・・
 #pragma config FOSC = INTOSCIO  //Oscillator(クロックソース設定)
@@ -40,7 +45,7 @@
 # define _XTAL_FREQ 4000000     //クリスタルの周波数を定義（Delayで使用される）　4,000,000=4MHｚ
 void settings(void);           //初期設定関数を宣言
 
-#define BIT_READ(val, bit) (((val) & (1 << (bit))) >> bit)
+#define BIT_READ(val, bit) (((val) & (1 << (bit))) >> bit) // Code from tangnatta @ https://gist.github.com/tangnatta/bb8b61bbeaf49ce6f0a1ff756f83d891
 
 inline int getValue(int current);
 inline void setMotor(int on);
