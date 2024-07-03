@@ -90,20 +90,20 @@ int BW=0;
 void main(void){
     settings();                 //初期設定の読み込み
                                 //一度だけ行う処理はここに記述
-    kickOut();
+    kickOut();                  // Reset to origin 
     for(;;){                    //無限ループ開始        
         // Kick out unwanted one
         if (WS && !lastWS){
-            iW++;
+            iW++; // Count White
         }
         if (BS && !lastBS){
-            iB++;
+            iB++; // Count Black
             
-            // Push it outt
+            // Push it out
             kickOut();
         }
         
-        switchLoop();
+        switchLoop(); // Run switch loop for switching white and black counter
         
         // Asign last varialble 
         lastWS = getValue(WS);
