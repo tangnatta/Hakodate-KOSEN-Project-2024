@@ -1,0 +1,61 @@
+[p GLOBOPT AUTOSTATIC IEEE_DBL IEEE_FLT PIC14 PICREGULAR PICMID ]
+[d version 1.1 ]
+[d edition pro ]
+[d chip 16F88 ]
+[d frameptr 0 ]
+"10 C:\Program Files\Microchip\xc8\v2.41\pic\sources\c90\common\sprcadd.c
+[v ___fladd __fladd `(d  1 e 4 0 ]
+"4 C:\Program Files\Microchip\xc8\v2.41\pic\sources\c90\common\Umul8_16.c
+[v __Umul8_16 _Umul8_16 `(ui  1 e 2 0 ]
+"6 C:\Program Files\Microchip\xc8\v2.41\pic\sources\c90\pic\__eeprom.c
+[v ___eecpymem __eecpymem `(v  1 e 1 0 ]
+"39
+[v ___memcpyee __memcpyee `(v  1 e 1 0 ]
+"52 C:\Users\joho-win10-2\Desktop\G2 Project\PIC16F88_test.X 1\PIC16F88_test.c
+[v _main main `(v  1 e 1 0 ]
+"107
+[v _settings settings `(v  1 e 1 0 ]
+"166 C:/Program Files/Microchip/MPLABX/v6.10/packs/Microchip/PIC16Fxxx_DFP/1.4.149/xc8\pic\include\proc\pic16f88.h
+[v _PORTA PORTA `VEuc  1 e 1 @5 ]
+"228
+[v _PORTB PORTB `VEuc  1 e 1 @6 ]
+"310
+[v _INTCON INTCON `VEuc  1 e 1 @11 ]
+"444
+[v _PIR2 PIR2 `VEuc  1 e 1 @13 ]
+"921
+[v _ADCON0 ADCON0 `VEuc  1 e 1 @31 ]
+"1017
+[v _OPTION_REG OPTION_REG `VEuc  1 e 1 @129 ]
+"1087
+[v _TRISA TRISA `VEuc  1 e 1 @133 ]
+"1149
+[v _TRISB TRISB `VEuc  1 e 1 @134 ]
+"1267
+[v _PIE2 PIE2 `VEuc  1 e 1 @141 ]
+"1335
+[v _OSCCON OSCCON `VEuc  1 e 1 @143 ]
+"1735
+[v _ANSEL ANSEL `VEuc  1 e 1 @155 ]
+"1791
+[v _CMCON CMCON `VEuc  1 e 1 @156 ]
+"1861
+[v _CVRCON CVRCON `VEuc  1 e 1 @157 ]
+"1933
+[v _ADCON1 ADCON1 `VEuc  1 e 1 @159 ]
+"2429
+[v _RB4 RB4 `VEb  1 e 0 @52 ]
+"52 C:\Users\joho-win10-2\Desktop\G2 Project\PIC16F88_test.X 1\PIC16F88_test.c
+[v _main main `(v  1 e 1 0 ]
+{
+"55
+[v main@i i `i  1 a 2 5 ]
+"56
+[v main@last last `i  1 a 2 3 ]
+"104
+} 0
+"107
+[v _settings settings `(v  1 e 1 0 ]
+{
+"302
+} 0
