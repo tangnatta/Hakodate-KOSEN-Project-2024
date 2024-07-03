@@ -169,13 +169,13 @@ inline void display7Seg(int n){
     int one = n%10;
     int ten = n%100;
     
-    // Write one digit
+    // Write first digit
     A1=BIT_READ(one, 0);
     B1=BIT_READ(one, 1);
     C1=BIT_READ(one, 2);
     D1=BIT_READ(one, 3);
     
-    // Write one digit
+    // Write second digit
     A10=BIT_READ(ten, 0);
     B10=BIT_READ(ten, 1);
     C10=BIT_READ(ten, 2);
