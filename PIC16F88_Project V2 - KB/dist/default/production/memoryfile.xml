@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project>
+  <executable name="dist/default/production\PIC16F88_Project_V2_-_KB.production.hex">
+    <memory name="program">
+      <units>words</units>
+      <length>4096</length>
+      <used>726</used>
+      <free>3370</free>
+    </memory>
+    <memory name="data">
+      <units>bytes</units>
+      <length>368</length>
+      <used>36</used>
+      <free>332</free>
+    </memory>
+  </executable>
+</project>

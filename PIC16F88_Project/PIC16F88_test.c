@@ -105,7 +105,7 @@ void main(void){
         
         switchLoop(); // Run switch loop for switching white and black counter
         
-        // Asign last varialble 
+        // Assign last variable 
         lastWS = getValue(WS);
         lastBS = getValue(BS);
         //lastLS = getValue(LS);
@@ -142,7 +142,7 @@ inline void switchLoop(){
             break;
     }
     
-    // Asign last varialble
+    // Assign last variable
     lastSW = getValue(SW);
 }
 
@@ -167,7 +167,7 @@ inline void setMotor(int on){
 
 inline void display7Seg(int n){
     int one = n%10;
-    int ten = n%100;
+    int ten = n/10;
     
     // Write first digit
     A1=BIT_READ(one, 0);
@@ -184,7 +184,10 @@ inline void display7Seg(int n){
 
 inline void kickOut(){
     setMotor(1);
-    __delay_ms(99);
+    while (LS==1){
+        switchLoop();
+        __delay_ms(9);
+    }
     while (LS==0){
         switchLoop();
         __delay_ms(9);

@@ -1,0 +1,500 @@
+%CMF
+# %PSECTS Section
+# For each object file, details of its psects are enumerated here.
+# The begining of the section is indicated by %PSECTS.  The first
+# line indicates the name of the first object file, e.g.
+#    $foo.obj
+# Each line that follows describes a psect in that object file, until
+# the next object file.  The lines that describe a psect have the
+# format:
+#    <psect name> <class name> <space> <link address> <load addresses> <length> <delta> <reloc>
+# All addresses and the length are given in unqualified hexadecimal
+# in delta units.  Any other numeric values are decimal.
+%PSECTS
+$C:\Users\KOSEN\AppData\Local\Temp\xcAslqs.\driver_tmp_12.o
+reset_vec CODE 0 0 0 1 2 1
+end_init CODE 0 1 1 2 2 1
+config CONFIG 4 2007 2007 2 2 1
+$dist/default/debug\PIC16F88_Project_V2_-_KW.debug.o
+cinit CODE 0 7EF 7EF 11 2 1
+text1 CODE 0 55C 55C 25 2 1
+text2 CODE 0 581 581 38 2 1
+text3 CODE 0 612 612 5D 2 1
+text4 CODE 0 53E 53E E 2 1
+text5 CODE 0 740 740 AF 2 1
+text6 CODE 0 5B9 5B9 59 2 1
+text7 CODE 0 66F 66F 67 2 1
+text8 CODE 0 54C 54C 10 2 1
+maintext CODE 0 6D6 6D6 6A 2 1
+cstackCOMMON COMMON 1 71 71 C 1 1
+cstackBANK0 BANK0 1 2C 2C A 1 1
+bssBANK0 BANK0 1 20 20 C 1 1
+config CONFIG 4 2007 2007 2 2 1
+# %UNUSED Section
+# This section enumerates the unused ranges of each CLASS. Each entry
+# is described on a single line as follows:
+#    <class name> <range> <delta>
+# Addresses given in the range are in hexadecimal and units of delta.
+%UNUSED
+RAM 36-6F 1
+RAM A0-EF 1
+RAM 110-16F 1
+RAM 190-1E6 1
+BANK0 36-6F 1
+BANK1 A0-EF 1
+BANK2 110-16F 1
+BANK3 190-1E6 1
+CONST 3-53D 2
+CONST 800-EFF 2
+ENTRY 3-53D 2
+ENTRY 800-EFF 2
+IDLOC 2000-2003 2
+CODE 3-53D 2
+CODE 800-EFF 2
+SFR0 0-1F 1
+SFR1 80-9F 1
+SFR2 100-10F 1
+SFR3 180-18F 1
+COMMON 7D-7D 1
+EEDATA 2100-21FF 2
+STRCODE 3-53D 2
+STRCODE 800-EFF 2
+STRING 3-53D 2
+STRING 800-EFF 2
+# %LINETAB Section
+# This section enumerates the file/line to address mappings.
+# The beginning of the section is indicated by %LINETAB.
+# The first line indicates the name of the first object file, e.g.
+#   $foo.obj
+# Each line that follows describes a single mapping until the next
+# object file.  Mappings have the following format:
+#    <address> <psect name> <class name> ><line number>:<file name>
+# The address is absolute and given given in unqualified hex 
+# in delta units of the psect. All mappings within an object file
+# are in ascending order of addresses.
+# All other numeric values are in decimal.
+%LINETAB
+$dist/default/debug\PIC16F88_Project_V2_-_KW.debug.o
+7EF cinit CODE >400:C:\Users\KOSEN\AppData\Local\Temp\xcAslqs.\driver_tmp_1.s
+7EF cinit CODE >403:C:\Users\KOSEN\AppData\Local\Temp\xcAslqs.\driver_tmp_1.s
+7EF cinit CODE >429:C:\Users\KOSEN\AppData\Local\Temp\xcAslqs.\driver_tmp_1.s
+7F0 cinit CODE >430:C:\Users\KOSEN\AppData\Local\Temp\xcAslqs.\driver_tmp_1.s
+7F1 cinit CODE >431:C:\Users\KOSEN\AppData\Local\Temp\xcAslqs.\driver_tmp_1.s
+7F2 cinit CODE >432:C:\Users\KOSEN\AppData\Local\Temp\xcAslqs.\driver_tmp_1.s
+7F3 cinit CODE >433:C:\Users\KOSEN\AppData\Local\Temp\xcAslqs.\driver_tmp_1.s
+7F4 cinit CODE >434:C:\Users\KOSEN\AppData\Local\Temp\xcAslqs.\driver_tmp_1.s
+7F5 cinit CODE >435:C:\Users\KOSEN\AppData\Local\Temp\xcAslqs.\driver_tmp_1.s
+7F6 cinit CODE >436:C:\Users\KOSEN\AppData\Local\Temp\xcAslqs.\driver_tmp_1.s
+7F7 cinit CODE >437:C:\Users\KOSEN\AppData\Local\Temp\xcAslqs.\driver_tmp_1.s
+7F8 cinit CODE >438:C:\Users\KOSEN\AppData\Local\Temp\xcAslqs.\driver_tmp_1.s
+7F9 cinit CODE >439:C:\Users\KOSEN\AppData\Local\Temp\xcAslqs.\driver_tmp_1.s
+7FA cinit CODE >440:C:\Users\KOSEN\AppData\Local\Temp\xcAslqs.\driver_tmp_1.s
+7FB cinit CODE >441:C:\Users\KOSEN\AppData\Local\Temp\xcAslqs.\driver_tmp_1.s
+7FC cinit CODE >442:C:\Users\KOSEN\AppData\Local\Temp\xcAslqs.\driver_tmp_1.s
+7FD cinit CODE >448:C:\Users\KOSEN\AppData\Local\Temp\xcAslqs.\driver_tmp_1.s
+7FD cinit CODE >450:C:\Users\KOSEN\AppData\Local\Temp\xcAslqs.\driver_tmp_1.s
+7FE cinit CODE >451:C:\Users\KOSEN\AppData\Local\Temp\xcAslqs.\driver_tmp_1.s
+54C text8 CODE >161:D:\Github\Hakodate-KOSEN-Project-2024\PIC16F88_Project V2 - KW\PIC16F88_test.c
+54C text8 CODE >162:D:\Github\Hakodate-KOSEN-Project-2024\PIC16F88_Project V2 - KW\PIC16F88_test.c
+552 text8 CODE >163:D:\Github\Hakodate-KOSEN-Project-2024\PIC16F88_Project V2 - KW\PIC16F88_test.c
+555 text8 CODE >164:D:\Github\Hakodate-KOSEN-Project-2024\PIC16F88_Project V2 - KW\PIC16F88_test.c
+556 text8 CODE >165:D:\Github\Hakodate-KOSEN-Project-2024\PIC16F88_Project V2 - KW\PIC16F88_test.c
+557 text8 CODE >166:D:\Github\Hakodate-KOSEN-Project-2024\PIC16F88_Project V2 - KW\PIC16F88_test.c
+557 text8 CODE >167:D:\Github\Hakodate-KOSEN-Project-2024\PIC16F88_Project V2 - KW\PIC16F88_test.c
+55A text8 CODE >168:D:\Github\Hakodate-KOSEN-Project-2024\PIC16F88_Project V2 - KW\PIC16F88_test.c
+55B text8 CODE >169:D:\Github\Hakodate-KOSEN-Project-2024\PIC16F88_Project V2 - KW\PIC16F88_test.c
+66F text7 CODE >5:C:\Program Files\Microchip\xc8\v2.46\pic\sources\c99\common\awdiv.c
+66F text7 CODE >13:C:\Program Files\Microchip\xc8\v2.46\pic\sources\c99\common\awdiv.c
+670 text7 CODE >14:C:\Program Files\Microchip\xc8\v2.46\pic\sources\c99\common\awdiv.c
+674 text7 CODE >15:C:\Program Files\Microchip\xc8\v2.46\pic\sources\c99\common\awdiv.c
+677 text7 CODE >15:C:\Program Files\Microchip\xc8\v2.46\pic\sources\c99\common\awdiv.c
+679 text7 CODE >16:C:\Program Files\Microchip\xc8\v2.46\pic\sources\c99\common\awdiv.c
+67B text7 CODE >18:C:\Program Files\Microchip\xc8\v2.46\pic\sources\c99\common\awdiv.c
+67F text7 CODE >19:C:\Program Files\Microchip\xc8\v2.46\pic\sources\c99\common\awdiv.c
+682 text7 CODE >19:C:\Program Files\Microchip\xc8\v2.46\pic\sources\c99\common\awdiv.c
+684 text7 CODE >20:C:\Program Files\Microchip\xc8\v2.46\pic\sources\c99\common\awdiv.c
+688 text7 CODE >22:C:\Program Files\Microchip\xc8\v2.46\pic\sources\c99\common\awdiv.c
+68A text7 CODE >23:C:\Program Files\Microchip\xc8\v2.46\pic\sources\c99\common\awdiv.c
+690 text7 CODE >24:C:\Program Files\Microchip\xc8\v2.46\pic\sources\c99\common\awdiv.c
+692 text7 CODE >25:C:\Program Files\Microchip\xc8\v2.46\pic\sources\c99\common\awdiv.c
+693 text7 CODE >26:C:\Program Files\Microchip\xc8\v2.46\pic\sources\c99\common\awdiv.c
+694 text7 CODE >26:C:\Program Files\Microchip\xc8\v2.46\pic\sources\c99\common\awdiv.c
+698 text7 CODE >26:C:\Program Files\Microchip\xc8\v2.46\pic\sources\c99\common\awdiv.c
+69A text7 CODE >27:C:\Program Files\Microchip\xc8\v2.46\pic\sources\c99\common\awdiv.c
+69E text7 CODE >25:C:\Program Files\Microchip\xc8\v2.46\pic\sources\c99\common\awdiv.c
+6A2 text7 CODE >30:C:\Program Files\Microchip\xc8\v2.46\pic\sources\c99\common\awdiv.c
+6A3 text7 CODE >30:C:\Program Files\Microchip\xc8\v2.46\pic\sources\c99\common\awdiv.c
+6A7 text7 CODE >30:C:\Program Files\Microchip\xc8\v2.46\pic\sources\c99\common\awdiv.c
+6A9 text7 CODE >31:C:\Program Files\Microchip\xc8\v2.46\pic\sources\c99\common\awdiv.c
+6AB text7 CODE >31:C:\Program Files\Microchip\xc8\v2.46\pic\sources\c99\common\awdiv.c
+6AF text7 CODE >31:C:\Program Files\Microchip\xc8\v2.46\pic\sources\c99\common\awdiv.c
+6B3 text7 CODE >32:C:\Program Files\Microchip\xc8\v2.46\pic\sources\c99\common\awdiv.c
+6B6 text7 CODE >32:C:\Program Files\Microchip\xc8\v2.46\pic\sources\c99\common\awdiv.c
+6B9 text7 CODE >33:C:\Program Files\Microchip\xc8\v2.46\pic\sources\c99\common\awdiv.c
+6BA text7 CODE >35:C:\Program Files\Microchip\xc8\v2.46\pic\sources\c99\common\awdiv.c
+6BB text7 CODE >35:C:\Program Files\Microchip\xc8\v2.46\pic\sources\c99\common\awdiv.c
+6BF text7 CODE >35:C:\Program Files\Microchip\xc8\v2.46\pic\sources\c99\common\awdiv.c
+6C1 text7 CODE >36:C:\Program Files\Microchip\xc8\v2.46\pic\sources\c99\common\awdiv.c
+6C7 text7 CODE >38:C:\Program Files\Microchip\xc8\v2.46\pic\sources\c99\common\awdiv.c
+6CC text7 CODE >39:C:\Program Files\Microchip\xc8\v2.46\pic\sources\c99\common\awdiv.c
+6CF text7 CODE >39:C:\Program Files\Microchip\xc8\v2.46\pic\sources\c99\common\awdiv.c
+6D1 text7 CODE >40:C:\Program Files\Microchip\xc8\v2.46\pic\sources\c99\common\awdiv.c
+6D5 text7 CODE >41:C:\Program Files\Microchip\xc8\v2.46\pic\sources\c99\common\awdiv.c
+5B9 text6 CODE >5:C:\Program Files\Microchip\xc8\v2.46\pic\sources\c99\common\awmod.c
+5B9 text6 CODE >12:C:\Program Files\Microchip\xc8\v2.46\pic\sources\c99\common\awmod.c
+5BA text6 CODE >13:C:\Program Files\Microchip\xc8\v2.46\pic\sources\c99\common\awmod.c
+5BE text6 CODE >14:C:\Program Files\Microchip\xc8\v2.46\pic\sources\c99\common\awmod.c
+5C1 text6 CODE >14:C:\Program Files\Microchip\xc8\v2.46\pic\sources\c99\common\awmod.c
+5C3 text6 CODE >15:C:\Program Files\Microchip\xc8\v2.46\pic\sources\c99\common\awmod.c
+5C5 text6 CODE >17:C:\Program Files\Microchip\xc8\v2.46\pic\sources\c99\common\awmod.c
+5C9 text6 CODE >18:C:\Program Files\Microchip\xc8\v2.46\pic\sources\c99\common\awmod.c
+5CC text6 CODE >18:C:\Program Files\Microchip\xc8\v2.46\pic\sources\c99\common\awmod.c
+5CE text6 CODE >19:C:\Program Files\Microchip\xc8\v2.46\pic\sources\c99\common\awmod.c
+5D4 text6 CODE >20:C:\Program Files\Microchip\xc8\v2.46\pic\sources\c99\common\awmod.c
+5D6 text6 CODE >21:C:\Program Files\Microchip\xc8\v2.46\pic\sources\c99\common\awmod.c
+5D7 text6 CODE >22:C:\Program Files\Microchip\xc8\v2.46\pic\sources\c99\common\awmod.c
+5D8 text6 CODE >22:C:\Program Files\Microchip\xc8\v2.46\pic\sources\c99\common\awmod.c
+5DC text6 CODE >22:C:\Program Files\Microchip\xc8\v2.46\pic\sources\c99\common\awmod.c
+5DE text6 CODE >23:C:\Program Files\Microchip\xc8\v2.46\pic\sources\c99\common\awmod.c
+5E2 text6 CODE >21:C:\Program Files\Microchip\xc8\v2.46\pic\sources\c99\common\awmod.c
+5E6 text6 CODE >26:C:\Program Files\Microchip\xc8\v2.46\pic\sources\c99\common\awmod.c
+5E8 text6 CODE >26:C:\Program Files\Microchip\xc8\v2.46\pic\sources\c99\common\awmod.c
+5EC text6 CODE >26:C:\Program Files\Microchip\xc8\v2.46\pic\sources\c99\common\awmod.c
+5F0 text6 CODE >27:C:\Program Files\Microchip\xc8\v2.46\pic\sources\c99\common\awmod.c
+5F3 text6 CODE >27:C:\Program Files\Microchip\xc8\v2.46\pic\sources\c99\common\awmod.c
+5F6 text6 CODE >28:C:\Program Files\Microchip\xc8\v2.46\pic\sources\c99\common\awmod.c
+5F7 text6 CODE >28:C:\Program Files\Microchip\xc8\v2.46\pic\sources\c99\common\awmod.c
+5FB text6 CODE >28:C:\Program Files\Microchip\xc8\v2.46\pic\sources\c99\common\awmod.c
+5FD text6 CODE >29:C:\Program Files\Microchip\xc8\v2.46\pic\sources\c99\common\awmod.c
+603 text6 CODE >31:C:\Program Files\Microchip\xc8\v2.46\pic\sources\c99\common\awmod.c
+608 text6 CODE >32:C:\Program Files\Microchip\xc8\v2.46\pic\sources\c99\common\awmod.c
+60B text6 CODE >32:C:\Program Files\Microchip\xc8\v2.46\pic\sources\c99\common\awmod.c
+60D text6 CODE >33:C:\Program Files\Microchip\xc8\v2.46\pic\sources\c99\common\awmod.c
+611 text6 CODE >34:C:\Program Files\Microchip\xc8\v2.46\pic\sources\c99\common\awmod.c
+740 text5 CODE >171:D:\Github\Hakodate-KOSEN-Project-2024\PIC16F88_Project V2 - KW\PIC16F88_test.c
+740 text5 CODE >172:D:\Github\Hakodate-KOSEN-Project-2024\PIC16F88_Project V2 - KW\PIC16F88_test.c
+751 text5 CODE >173:D:\Github\Hakodate-KOSEN-Project-2024\PIC16F88_Project V2 - KW\PIC16F88_test.c
+762 text5 CODE >176:D:\Github\Hakodate-KOSEN-Project-2024\PIC16F88_Project V2 - KW\PIC16F88_test.c
+76C text5 CODE >177:D:\Github\Hakodate-KOSEN-Project-2024\PIC16F88_Project V2 - KW\PIC16F88_test.c
+77D text5 CODE >178:D:\Github\Hakodate-KOSEN-Project-2024\PIC16F88_Project V2 - KW\PIC16F88_test.c
+791 text5 CODE >179:D:\Github\Hakodate-KOSEN-Project-2024\PIC16F88_Project V2 - KW\PIC16F88_test.c
+7A8 text5 CODE >182:D:\Github\Hakodate-KOSEN-Project-2024\PIC16F88_Project V2 - KW\PIC16F88_test.c
+7B2 text5 CODE >183:D:\Github\Hakodate-KOSEN-Project-2024\PIC16F88_Project V2 - KW\PIC16F88_test.c
+7C3 text5 CODE >184:D:\Github\Hakodate-KOSEN-Project-2024\PIC16F88_Project V2 - KW\PIC16F88_test.c
+7D7 text5 CODE >185:D:\Github\Hakodate-KOSEN-Project-2024\PIC16F88_Project V2 - KW\PIC16F88_test.c
+7EE text5 CODE >186:D:\Github\Hakodate-KOSEN-Project-2024\PIC16F88_Project V2 - KW\PIC16F88_test.c
+53E text4 CODE >152:D:\Github\Hakodate-KOSEN-Project-2024\PIC16F88_Project V2 - KW\PIC16F88_test.c
+53E text4 CODE >153:D:\Github\Hakodate-KOSEN-Project-2024\PIC16F88_Project V2 - KW\PIC16F88_test.c
+544 text4 CODE >154:D:\Github\Hakodate-KOSEN-Project-2024\PIC16F88_Project V2 - KW\PIC16F88_test.c
+549 text4 CODE >157:D:\Github\Hakodate-KOSEN-Project-2024\PIC16F88_Project V2 - KW\PIC16F88_test.c
+54B text4 CODE >159:D:\Github\Hakodate-KOSEN-Project-2024\PIC16F88_Project V2 - KW\PIC16F88_test.c
+612 text3 CODE >117:D:\Github\Hakodate-KOSEN-Project-2024\PIC16F88_Project V2 - KW\PIC16F88_test.c
+612 text3 CODE >119:D:\Github\Hakodate-KOSEN-Project-2024\PIC16F88_Project V2 - KW\PIC16F88_test.c
+61E text3 CODE >120:D:\Github\Hakodate-KOSEN-Project-2024\PIC16F88_Project V2 - KW\PIC16F88_test.c
+62D text3 CODE >127:D:\Github\Hakodate-KOSEN-Project-2024\PIC16F88_Project V2 - KW\PIC16F88_test.c
+634 text3 CODE >128:D:\Github\Hakodate-KOSEN-Project-2024\PIC16F88_Project V2 - KW\PIC16F88_test.c
+637 text3 CODE >129:D:\Github\Hakodate-KOSEN-Project-2024\PIC16F88_Project V2 - KW\PIC16F88_test.c
+638 text3 CODE >130:D:\Github\Hakodate-KOSEN-Project-2024\PIC16F88_Project V2 - KW\PIC16F88_test.c
+639 text3 CODE >134:D:\Github\Hakodate-KOSEN-Project-2024\PIC16F88_Project V2 - KW\PIC16F88_test.c
+63D text3 CODE >134:D:\Github\Hakodate-KOSEN-Project-2024\PIC16F88_Project V2 - KW\PIC16F88_test.c
+644 text3 CODE >135:D:\Github\Hakodate-KOSEN-Project-2024\PIC16F88_Project V2 - KW\PIC16F88_test.c
+647 text3 CODE >136:D:\Github\Hakodate-KOSEN-Project-2024\PIC16F88_Project V2 - KW\PIC16F88_test.c
+648 text3 CODE >137:D:\Github\Hakodate-KOSEN-Project-2024\PIC16F88_Project V2 - KW\PIC16F88_test.c
+649 text3 CODE >141:D:\Github\Hakodate-KOSEN-Project-2024\PIC16F88_Project V2 - KW\PIC16F88_test.c
+64C text3 CODE >146:D:\Github\Hakodate-KOSEN-Project-2024\PIC16F88_Project V2 - KW\PIC16F88_test.c
+64E text3 CODE >146:D:\Github\Hakodate-KOSEN-Project-2024\PIC16F88_Project V2 - KW\PIC16F88_test.c
+653 text3 CODE >146:D:\Github\Hakodate-KOSEN-Project-2024\PIC16F88_Project V2 - KW\PIC16F88_test.c
+656 text3 CODE >146:D:\Github\Hakodate-KOSEN-Project-2024\PIC16F88_Project V2 - KW\PIC16F88_test.c
+659 text3 CODE >149:D:\Github\Hakodate-KOSEN-Project-2024\PIC16F88_Project V2 - KW\PIC16F88_test.c
+65B text3 CODE >149:D:\Github\Hakodate-KOSEN-Project-2024\PIC16F88_Project V2 - KW\PIC16F88_test.c
+65D text3 CODE >149:D:\Github\Hakodate-KOSEN-Project-2024\PIC16F88_Project V2 - KW\PIC16F88_test.c
+66E text3 CODE >150:D:\Github\Hakodate-KOSEN-Project-2024\PIC16F88_Project V2 - KW\PIC16F88_test.c
+581 text2 CODE >188:D:\Github\Hakodate-KOSEN-Project-2024\PIC16F88_Project V2 - KW\PIC16F88_test.c
+581 text2 CODE >189:D:\Github\Hakodate-KOSEN-Project-2024\PIC16F88_Project V2 - KW\PIC16F88_test.c
+588 text2 CODE >190:D:\Github\Hakodate-KOSEN-Project-2024\PIC16F88_Project V2 - KW\PIC16F88_test.c
+589 text2 CODE >191:D:\Github\Hakodate-KOSEN-Project-2024\PIC16F88_Project V2 - KW\PIC16F88_test.c
+58C text2 CODE >192:D:\Github\Hakodate-KOSEN-Project-2024\PIC16F88_Project V2 - KW\PIC16F88_test.c
+597 text2 CODE >190:D:\Github\Hakodate-KOSEN-Project-2024\PIC16F88_Project V2 - KW\PIC16F88_test.c
+59E text2 CODE >195:D:\Github\Hakodate-KOSEN-Project-2024\PIC16F88_Project V2 - KW\PIC16F88_test.c
+5A1 text2 CODE >196:D:\Github\Hakodate-KOSEN-Project-2024\PIC16F88_Project V2 - KW\PIC16F88_test.c
+5AC text2 CODE >194:D:\Github\Hakodate-KOSEN-Project-2024\PIC16F88_Project V2 - KW\PIC16F88_test.c
+5B2 text2 CODE >198:D:\Github\Hakodate-KOSEN-Project-2024\PIC16F88_Project V2 - KW\PIC16F88_test.c
+5B8 text2 CODE >199:D:\Github\Hakodate-KOSEN-Project-2024\PIC16F88_Project V2 - KW\PIC16F88_test.c
+55C text1 CODE >202:D:\Github\Hakodate-KOSEN-Project-2024\PIC16F88_Project V2 - KW\PIC16F88_test.c
+55C text1 CODE >204:D:\Github\Hakodate-KOSEN-Project-2024\PIC16F88_Project V2 - KW\PIC16F88_test.c
+560 text1 CODE >221:D:\Github\Hakodate-KOSEN-Project-2024\PIC16F88_Project V2 - KW\PIC16F88_test.c
+562 text1 CODE >236:D:\Github\Hakodate-KOSEN-Project-2024\PIC16F88_Project V2 - KW\PIC16F88_test.c
+563 text1 CODE >248:D:\Github\Hakodate-KOSEN-Project-2024\PIC16F88_Project V2 - KW\PIC16F88_test.c
+566 text1 CODE >261:D:\Github\Hakodate-KOSEN-Project-2024\PIC16F88_Project V2 - KW\PIC16F88_test.c
+56A text1 CODE >273:D:\Github\Hakodate-KOSEN-Project-2024\PIC16F88_Project V2 - KW\PIC16F88_test.c
+56D text1 CODE >286:D:\Github\Hakodate-KOSEN-Project-2024\PIC16F88_Project V2 - KW\PIC16F88_test.c
+570 text1 CODE >297:D:\Github\Hakodate-KOSEN-Project-2024\PIC16F88_Project V2 - KW\PIC16F88_test.c
+573 text1 CODE >309:D:\Github\Hakodate-KOSEN-Project-2024\PIC16F88_Project V2 - KW\PIC16F88_test.c
+576 text1 CODE >324:D:\Github\Hakodate-KOSEN-Project-2024\PIC16F88_Project V2 - KW\PIC16F88_test.c
+578 text1 CODE >335:D:\Github\Hakodate-KOSEN-Project-2024\PIC16F88_Project V2 - KW\PIC16F88_test.c
+579 text1 CODE >350:D:\Github\Hakodate-KOSEN-Project-2024\PIC16F88_Project V2 - KW\PIC16F88_test.c
+57A text1 CODE >369:D:\Github\Hakodate-KOSEN-Project-2024\PIC16F88_Project V2 - KW\PIC16F88_test.c
+57D text1 CODE >383:D:\Github\Hakodate-KOSEN-Project-2024\PIC16F88_Project V2 - KW\PIC16F88_test.c
+580 text1 CODE >397:D:\Github\Hakodate-KOSEN-Project-2024\PIC16F88_Project V2 - KW\PIC16F88_test.c
+6D6 maintext CODE >90:D:\Github\Hakodate-KOSEN-Project-2024\PIC16F88_Project V2 - KW\PIC16F88_test.c
+6D6 maintext CODE >91:D:\Github\Hakodate-KOSEN-Project-2024\PIC16F88_Project V2 - KW\PIC16F88_test.c
+6D9 maintext CODE >93:D:\Github\Hakodate-KOSEN-Project-2024\PIC16F88_Project V2 - KW\PIC16F88_test.c
+6DC maintext CODE >96:D:\Github\Hakodate-KOSEN-Project-2024\PIC16F88_Project V2 - KW\PIC16F88_test.c
+6E8 maintext CODE >97:D:\Github\Hakodate-KOSEN-Project-2024\PIC16F88_Project V2 - KW\PIC16F88_test.c
+6EA maintext CODE >97:D:\Github\Hakodate-KOSEN-Project-2024\PIC16F88_Project V2 - KW\PIC16F88_test.c
+6EE maintext CODE >100:D:\Github\Hakodate-KOSEN-Project-2024\PIC16F88_Project V2 - KW\PIC16F88_test.c
+6F1 maintext CODE >102:D:\Github\Hakodate-KOSEN-Project-2024\PIC16F88_Project V2 - KW\PIC16F88_test.c
+6FD maintext CODE >103:D:\Github\Hakodate-KOSEN-Project-2024\PIC16F88_Project V2 - KW\PIC16F88_test.c
+6FF maintext CODE >103:D:\Github\Hakodate-KOSEN-Project-2024\PIC16F88_Project V2 - KW\PIC16F88_test.c
+703 maintext CODE >106:D:\Github\Hakodate-KOSEN-Project-2024\PIC16F88_Project V2 - KW\PIC16F88_test.c
+706 maintext CODE >109:D:\Github\Hakodate-KOSEN-Project-2024\PIC16F88_Project V2 - KW\PIC16F88_test.c
+70A maintext CODE >109:D:\Github\Hakodate-KOSEN-Project-2024\PIC16F88_Project V2 - KW\PIC16F88_test.c
+70C maintext CODE >109:D:\Github\Hakodate-KOSEN-Project-2024\PIC16F88_Project V2 - KW\PIC16F88_test.c
+71D maintext CODE >110:D:\Github\Hakodate-KOSEN-Project-2024\PIC16F88_Project V2 - KW\PIC16F88_test.c
+71F maintext CODE >110:D:\Github\Hakodate-KOSEN-Project-2024\PIC16F88_Project V2 - KW\PIC16F88_test.c
+721 maintext CODE >110:D:\Github\Hakodate-KOSEN-Project-2024\PIC16F88_Project V2 - KW\PIC16F88_test.c
+732 maintext CODE >113:D:\Github\Hakodate-KOSEN-Project-2024\PIC16F88_Project V2 - KW\PIC16F88_test.c
+73D maintext CODE >114:D:\Github\Hakodate-KOSEN-Project-2024\PIC16F88_Project V2 - KW\PIC16F88_test.c
+# %SYMTAB Section
+# An enumeration of all symbols in the program.
+# The beginning of the section is indicated by %SYMTAB.
+# Each line describes a single symbol as follows:
+#    <label> <value> [-]<load-adj> <class> <space> <psect> <file-name>
+# The value and load-adj are both in unqualified hexadecimal.
+# All other numeric values are in decimal.  The load-adj is the
+# quantity one needs to add to the symbol value in order to obtain the load
+# address of the symbol.  This value may be signed. If the symbol
+# was defined in a psect then <psect> will be "-". File-name
+# is the name of the object file in which the symbol was defined.
+%SYMTAB
+___latbits 1 0 ABS 0 - dist/default/debug\PIC16F88_Project_V2_-_KW.debug.o
+___awdiv@counter 75 0 COMMON 1 cstackCOMMON dist/default/debug\PIC16F88_Project_V2_-_KW.debug.o
+__Hspace_0 800 0 ABS 0 - -
+__Hspace_1 7D 0 ABS 0 - -
+__Hspace_2 0 0 ABS 0 - -
+__Hspace_3 0 0 ABS 0 - -
+__Hspace_4 4010 0 ABS 0 - -
+__Heeprom_data 0 0 EEDATA 3 eeprom_data -
+_BW 20 0 BANK0 1 bssBANK0 dist/default/debug\PIC16F88_Project_V2_-_KW.debug.o
+_iA 2A 0 BANK0 1 bssBANK0 dist/default/debug\PIC16F88_Project_V2_-_KW.debug.o
+_iW 28 0 BANK0 1 bssBANK0 dist/default/debug\PIC16F88_Project_V2_-_KW.debug.o
+__L__absolute__ 0 0 ABS 0 __absolute__ -
+__Hstrings 0 0 ABS 0 strings -
+_PIE2 8D 0 ABS 0 - dist/default/debug\PIC16F88_Project_V2_-_KW.debug.o
+_PIR2 D 0 ABS 0 - dist/default/debug\PIC16F88_Project_V2_-_KW.debug.o
+___sp 0 0 STACK 2 stack C:\Users\KOSEN\AppData\Local\Temp\xcAslqs.\driver_tmp_12.o
+_main DAC 0 CODE 0 maintext dist/default/debug\PIC16F88_Project_V2_-_KW.debug.o
+btemp 7E 0 ABS 0 - dist/default/debug\PIC16F88_Project_V2_-_KW.debug.o
+___stack_hi 0 0 STACK 2 stack C:\Users\KOSEN\AppData\Local\Temp\xcAslqs.\driver_tmp_12.o
+___stack_lo 0 0 STACK 2 stack C:\Users\KOSEN\AppData\Local\Temp\xcAslqs.\driver_tmp_12.o
+start 2 0 CODE 0 init C:\Users\KOSEN\AppData\Local\Temp\xcAslqs.\driver_tmp_12.o
+_switchLoop C24 0 CODE 0 text3 dist/default/debug\PIC16F88_Project_V2_-_KW.debug.o
+__Hpowerup 0 0 CODE 0 powerup -
+___awmod@sign 76 0 COMMON 1 cstackCOMMON dist/default/debug\PIC16F88_Project_V2_-_KW.debug.o
+getValue@current 71 0 COMMON 1 cstackCOMMON dist/default/debug\PIC16F88_Project_V2_-_KW.debug.o
+intlevel0 0 0 ENTRY 0 functab C:\Users\KOSEN\AppData\Local\Temp\xcAslqs.\driver_tmp_12.o
+intlevel1 0 0 ENTRY 0 functab C:\Users\KOSEN\AppData\Local\Temp\xcAslqs.\driver_tmp_12.o
+intlevel2 0 0 ENTRY 0 functab C:\Users\KOSEN\AppData\Local\Temp\xcAslqs.\driver_tmp_12.o
+intlevel3 0 0 ENTRY 0 functab C:\Users\KOSEN\AppData\Local\Temp\xcAslqs.\driver_tmp_12.o
+intlevel4 0 0 ENTRY 0 functab C:\Users\KOSEN\AppData\Local\Temp\xcAslqs.\driver_tmp_12.o
+intlevel5 0 0 ENTRY 0 functab C:\Users\KOSEN\AppData\Local\Temp\xcAslqs.\driver_tmp_12.o
+wtemp0 7E 0 ABS 0 - dist/default/debug\PIC16F88_Project_V2_-_KW.debug.o
+__Hfunctab 0 0 ENTRY 0 functab -
+___awdiv@sign 76 0 COMMON 1 cstackCOMMON dist/default/debug\PIC16F88_Project_V2_-_KW.debug.o
+__Hclrtext 0 0 ABS 0 clrtext -
+_ADCON0 1F 0 ABS 0 - dist/default/debug\PIC16F88_Project_V2_-_KW.debug.o
+_ADCON1 9F 0 ABS 0 - dist/default/debug\PIC16F88_Project_V2_-_KW.debug.o
+___awdiv@dividend 73 0 COMMON 1 cstackCOMMON dist/default/debug\PIC16F88_Project_V2_-_KW.debug.o
+_CVRCON 9D 0 ABS 0 - dist/default/debug\PIC16F88_Project_V2_-_KW.debug.o
+__end_of_switchLoop CDE 0 CODE 0 text3 dist/default/debug\PIC16F88_Project_V2_-_KW.debug.o
+__Lmaintext 0 0 ABS 0 maintext -
+___awdiv@divisor 71 0 COMMON 1 cstackCOMMON dist/default/debug\PIC16F88_Project_V2_-_KW.debug.o
+__end_of___awdiv DAC 0 CODE 0 text7 dist/default/debug\PIC16F88_Project_V2_-_KW.debug.o
+__end_of___awmod C24 0 CODE 0 text6 dist/default/debug\PIC16F88_Project_V2_-_KW.debug.o
+_INTCON B 0 ABS 0 - dist/default/debug\PIC16F88_Project_V2_-_KW.debug.o
+display7Seg@one 2C 0 BANK0 1 cstackBANK0 dist/default/debug\PIC16F88_Project_V2_-_KW.debug.o
+display7Seg@ten 2E 0 BANK0 1 cstackBANK0 dist/default/debug\PIC16F88_Project_V2_-_KW.debug.o
+_OPTION_REG 81 0 ABS 0 - dist/default/debug\PIC16F88_Project_V2_-_KW.debug.o
+___stackhi 0 0 ABS 0 - C:\Users\KOSEN\AppData\Local\Temp\xcAslqs.\driver_tmp_12.o
+___stacklo 0 0 ABS 0 - C:\Users\KOSEN\AppData\Local\Temp\xcAslqs.\driver_tmp_12.o
+_kickOut B02 0 CODE 0 text2 dist/default/debug\PIC16F88_Project_V2_-_KW.debug.o
+start_initialization FDE 0 CODE 0 cinit dist/default/debug\PIC16F88_Project_V2_-_KW.debug.o
+_OSCCON 8F 0 ABS 0 - dist/default/debug\PIC16F88_Project_V2_-_KW.debug.o
+_display7Seg E80 0 CODE 0 text5 dist/default/debug\PIC16F88_Project_V2_-_KW.debug.o
+__pcstackBANK0 2C 0 BANK0 1 cstackBANK0 dist/default/debug\PIC16F88_Project_V2_-_KW.debug.o
+___int_sp 0 0 STACK 2 stack C:\Users\KOSEN\AppData\Local\Temp\xcAslqs.\driver_tmp_12.o
+__Hbank0 0 0 ABS 0 bank0 -
+__Hbank1 0 0 ABS 0 bank1 -
+__Hbank2 0 0 ABS 0 bank2 -
+__Hbank3 0 0 ABS 0 bank3 -
+__Hcinit 1000 0 CODE 0 cinit -
+__Hstack 0 0 STACK 2 stack -
+__Hmaintext 0 0 ABS 0 maintext -
+__Hcommon 0 0 ABS 0 common -
+__Hconfig 4012 0 CONFIG 4 config -
+__Lbank0 0 0 ABS 0 bank0 -
+__Lbank1 0 0 ABS 0 bank1 -
+__Lbank2 0 0 ABS 0 bank2 -
+__Lbank3 0 0 ABS 0 bank3 -
+__Lcinit FDE 0 CODE 0 cinit -
+__Lstack 0 0 STACK 2 stack -
+__Habs1 0 0 ABS 0 abs1 -
+__Hcode 0 0 ABS 0 code -
+__Hheap 0 0 HEAP 7 heap -
+__Hinit 2 0 CODE 0 init -
+__Hsfr0 0 0 ABS 0 sfr0 -
+__Hsfr1 0 0 ABS 0 sfr1 -
+__Hsfr2 0 0 ABS 0 sfr2 -
+__Hsfr3 0 0 ABS 0 sfr3 -
+__Hsivt 2 0 CODE 0 sivt -
+__Htext 0 0 ABS 0 text -
+__Labs1 0 0 ABS 0 abs1 -
+__Lcode 0 0 ABS 0 code -
+__Lheap 0 0 HEAP 7 heap -
+__Linit 2 0 CODE 0 init -
+__Lsfr0 0 0 ABS 0 sfr0 -
+__Lsfr1 0 0 ABS 0 sfr1 -
+__Lsfr2 0 0 ABS 0 sfr2 -
+__Lsfr3 0 0 ABS 0 sfr3 -
+__Lsivt 2 0 CODE 0 sivt -
+__Ltext 0 0 ABS 0 text -
+__LcstackBANK0 0 0 ABS 0 cstackBANK0 -
+__HcstackCOMMON 0 0 ABS 0 cstackCOMMON -
+_RA0 28 0 ABS 0 - dist/default/debug\PIC16F88_Project_V2_-_KW.debug.o
+_RA1 29 0 ABS 0 - dist/default/debug\PIC16F88_Project_V2_-_KW.debug.o
+_RA2 2A 0 ABS 0 - dist/default/debug\PIC16F88_Project_V2_-_KW.debug.o
+_RA3 2B 0 ABS 0 - dist/default/debug\PIC16F88_Project_V2_-_KW.debug.o
+_RA4 2C 0 ABS 0 - dist/default/debug\PIC16F88_Project_V2_-_KW.debug.o
+_RA5 2D 0 ABS 0 - dist/default/debug\PIC16F88_Project_V2_-_KW.debug.o
+_RA6 2E 0 ABS 0 - dist/default/debug\PIC16F88_Project_V2_-_KW.debug.o
+_RA7 2F 0 ABS 0 - dist/default/debug\PIC16F88_Project_V2_-_KW.debug.o
+_RB0 30 0 ABS 0 - dist/default/debug\PIC16F88_Project_V2_-_KW.debug.o
+_RB1 31 0 ABS 0 - dist/default/debug\PIC16F88_Project_V2_-_KW.debug.o
+_RB2 32 0 ABS 0 - dist/default/debug\PIC16F88_Project_V2_-_KW.debug.o
+_RB3 33 0 ABS 0 - dist/default/debug\PIC16F88_Project_V2_-_KW.debug.o
+_RB4 34 0 ABS 0 - dist/default/debug\PIC16F88_Project_V2_-_KW.debug.o
+_RB5 35 0 ABS 0 - dist/default/debug\PIC16F88_Project_V2_-_KW.debug.o
+_RB6 36 0 ABS 0 - dist/default/debug\PIC16F88_Project_V2_-_KW.debug.o
+_RB7 37 0 ABS 0 - dist/default/debug\PIC16F88_Project_V2_-_KW.debug.o
+__S0 800 0 ABS 0 - -
+__S1 7D 0 ABS 0 - -
+__S3 0 0 ABS 0 - -
+__Lintentry 2 0 CODE 0 intentry -
+reset_vec 0 0 CODE 0 reset_vec C:\Users\KOSEN\AppData\Local\Temp\xcAslqs.\driver_tmp_12.o
+__LbssBANK0 0 0 ABS 0 bssBANK0 -
+_lastAS 24 0 BANK0 1 bssBANK0 dist/default/debug\PIC16F88_Project_V2_-_KW.debug.o
+_lastSW 22 0 BANK0 1 bssBANK0 dist/default/debug\PIC16F88_Project_V2_-_KW.debug.o
+_lastWS 26 0 BANK0 1 bssBANK0 dist/default/debug\PIC16F88_Project_V2_-_KW.debug.o
+___awmod@counter 75 0 COMMON 1 cstackCOMMON dist/default/debug\PIC16F88_Project_V2_-_KW.debug.o
+___awdiv CDE 0 CODE 0 text7 dist/default/debug\PIC16F88_Project_V2_-_KW.debug.o
+___awmod B72 0 CODE 0 text6 dist/default/debug\PIC16F88_Project_V2_-_KW.debug.o
+__pmaintext DAC 0 CODE 0 maintext dist/default/debug\PIC16F88_Project_V2_-_KW.debug.o
+__Lcommon 0 0 ABS 0 common -
+__Lconfig 0 0 CONFIG 4 config -
+_getValue A7C 0 CODE 0 text4 dist/default/debug\PIC16F88_Project_V2_-_KW.debug.o
+__Lspace_0 0 0 ABS 0 - -
+__Lspace_1 0 0 ABS 0 - -
+__Lspace_2 0 0 ABS 0 - -
+__Lspace_3 0 0 ABS 0 - -
+__Lspace_4 0 0 ABS 0 - -
+__end_of_getValue A98 0 CODE 0 text4 dist/default/debug\PIC16F88_Project_V2_-_KW.debug.o
+__HcstackBANK0 0 0 ABS 0 cstackBANK0 -
+__Lend_init 2 0 CODE 0 end_init -
+__LcstackCOMMON 0 0 ABS 0 cstackCOMMON -
+end_of_initialization FFA 0 CODE 0 cinit dist/default/debug\PIC16F88_Project_V2_-_KW.debug.o
+setMotor@on 71 0 COMMON 1 cstackCOMMON dist/default/debug\PIC16F88_Project_V2_-_KW.debug.o
+__Hintentry 2 0 CODE 0 intentry -
+__Lstrings 0 0 ABS 0 strings -
+___awdiv@quotient 77 0 COMMON 1 cstackCOMMON dist/default/debug\PIC16F88_Project_V2_-_KW.debug.o
+?___awdiv 71 0 COMMON 1 cstackCOMMON dist/default/debug\PIC16F88_Project_V2_-_KW.debug.o
+?___awmod 71 0 COMMON 1 cstackCOMMON dist/default/debug\PIC16F88_Project_V2_-_KW.debug.o
+__end_of_display7Seg FDE 0 CODE 0 text5 dist/default/debug\PIC16F88_Project_V2_-_KW.debug.o
+_setMotor A98 0 CODE 0 text8 dist/default/debug\PIC16F88_Project_V2_-_KW.debug.o
+__Hreset_vec 2 0 CODE 0 reset_vec -
+display7Seg@n 79 0 COMMON 1 cstackCOMMON dist/default/debug\PIC16F88_Project_V2_-_KW.debug.o
+__HbssBANK0 0 0 ABS 0 bssBANK0 -
+___awmod@dividend 73 0 COMMON 1 cstackCOMMON dist/default/debug\PIC16F88_Project_V2_-_KW.debug.o
+_settings AB8 0 CODE 0 text1 dist/default/debug\PIC16F88_Project_V2_-_KW.debug.o
+__ptext1 AB8 0 CODE 0 text1 dist/default/debug\PIC16F88_Project_V2_-_KW.debug.o
+__ptext2 B02 0 CODE 0 text2 dist/default/debug\PIC16F88_Project_V2_-_KW.debug.o
+__ptext3 C24 0 CODE 0 text3 dist/default/debug\PIC16F88_Project_V2_-_KW.debug.o
+__ptext4 A7C 0 CODE 0 text4 dist/default/debug\PIC16F88_Project_V2_-_KW.debug.o
+__ptext5 E80 0 CODE 0 text5 dist/default/debug\PIC16F88_Project_V2_-_KW.debug.o
+__ptext6 B72 0 CODE 0 text6 dist/default/debug\PIC16F88_Project_V2_-_KW.debug.o
+__ptext7 CDE 0 CODE 0 text7 dist/default/debug\PIC16F88_Project_V2_-_KW.debug.o
+__ptext8 A98 0 CODE 0 text8 dist/default/debug\PIC16F88_Project_V2_-_KW.debug.o
+__end_of_setMotor AB8 0 CODE 0 text8 dist/default/debug\PIC16F88_Project_V2_-_KW.debug.o
+__end_of_settings B02 0 CODE 0 text1 dist/default/debug\PIC16F88_Project_V2_-_KW.debug.o
+__Lpowerup 0 0 CODE 0 powerup -
+__Leeprom_data 0 0 EEDATA 3 eeprom_data -
+__H__absolute__ 0 0 ABS 0 __absolute__ -
+__Lreset_vec 0 0 CODE 0 reset_vec -
+___heap_hi 0 0 ABS 0 - C:\Users\KOSEN\AppData\Local\Temp\xcAslqs.\driver_tmp_12.o
+___heap_lo 0 0 ABS 0 - C:\Users\KOSEN\AppData\Local\Temp\xcAslqs.\driver_tmp_12.o
+__end_of__initialization FFA 0 CODE 0 cinit dist/default/debug\PIC16F88_Project_V2_-_KW.debug.o
+___awmod@divisor 71 0 COMMON 1 cstackCOMMON dist/default/debug\PIC16F88_Project_V2_-_KW.debug.o
+__Lfunctab 0 0 ENTRY 0 functab -
+__Lclrtext 0 0 ABS 0 clrtext -
+__pcstackCOMMON 71 0 COMMON 1 cstackCOMMON dist/default/debug\PIC16F88_Project_V2_-_KW.debug.o
+__Hend_init 6 0 CODE 0 end_init -
+__end_of_main E80 0 CODE 0 maintext dist/default/debug\PIC16F88_Project_V2_-_KW.debug.o
+_ANSEL 9B 0 ABS 0 - dist/default/debug\PIC16F88_Project_V2_-_KW.debug.o
+_CMCON 9C 0 ABS 0 - dist/default/debug\PIC16F88_Project_V2_-_KW.debug.o
+_PORTA 5 0 ABS 0 - dist/default/debug\PIC16F88_Project_V2_-_KW.debug.o
+_PORTB 6 0 ABS 0 - dist/default/debug\PIC16F88_Project_V2_-_KW.debug.o
+_TRISA 85 0 ABS 0 - dist/default/debug\PIC16F88_Project_V2_-_KW.debug.o
+_TRISB 86 0 ABS 0 - dist/default/debug\PIC16F88_Project_V2_-_KW.debug.o
+__Hram 0 0 ABS 0 ram -
+__Lram 0 0 ABS 0 ram -
+?_getValue 71 0 COMMON 1 cstackCOMMON dist/default/debug\PIC16F88_Project_V2_-_KW.debug.o
+__end_of_kickOut B72 0 CODE 0 text2 dist/default/debug\PIC16F88_Project_V2_-_KW.debug.o
+__initialization FDE 0 CODE 0 cinit dist/default/debug\PIC16F88_Project_V2_-_KW.debug.o
+__pbssBANK0 20 0 BANK0 1 bssBANK0 dist/default/debug\PIC16F88_Project_V2_-_KW.debug.o
+___int_stack_hi 0 0 STACK 2 stack C:\Users\KOSEN\AppData\Local\Temp\xcAslqs.\driver_tmp_12.o
+___int_stack_lo 0 0 STACK 2 stack C:\Users\KOSEN\AppData\Local\Temp\xcAslqs.\driver_tmp_12.o
+# %SPLITSTAB Section
+# This section enumerates all the psect splits performed by the assembler.
+# The beginning of the section is indicated by %SPLITSTAB.
+# Each line is a record a particular split, where the parent psect is on
+# the left and the child on the right.  Note that a child psect is always
+# split form the top of the parent psect. All splits from a given parent
+# are listed in the order in which they occurred.
+%SPLITSTAB
+# %DABS Section
+# This section contains a table of all usuage of the assember
+# directive DABS in the program. Each line has the following format:
+#   <name> <space> <address> <size>
+# If the DABS was originally labelled then that shall be <name>,
+# otherwise name will be "-".  The <space> number is in decimal.
+# <address> and <size> are in byte units as unqaulified hexadecimal
+%DABS
+- 1 7E 2
+# %SEGMENTS Section
+# This sections enumerates the segments of the program.  Each segment
+# is described on a single line as follows:
+#    <name> <space> <link address> <file address> <size> <delta>
+# Addresses and size are in unqualified hexadecimal.  The link address
+# and size are in units of delta. The file address is in units of bytes.
+# All other numeric quantities are in decimal.
+%SEGMENTS
+cinit 0 7EF FDE 11 2
+text1 0 55C AB8 25 2
+text2 0 581 B02 38 2
+text3 0 612 C24 5D 2
+text4 0 53E A7C E 2
+text5 0 740 E80 AF 2
+text6 0 5B9 B72 59 2
+text7 0 66F CDE 67 2
+text8 0 54C A98 10 2
+maintext 0 6D6 DAC 6A 2
+cstackCOMMON 1 71 71 C 1
+reset_vec 0 0 0 3 2
+bssBANK0 1 20 20 16 1
+# %NOTES Section
+# This section contains data of all the note-psects.  The beginning of the section
+# is indicated by %NOTES. The first line indicates the name and decimal
+# byte-length of the first note-psect, e.g.
+#   $codecov_info_hdr 16
+# Each line that follows contains the byte-data of the psect in hexadecimal as a
+# space-separated list. These lines are limited to 16 bytes of data.
+%NOTES
