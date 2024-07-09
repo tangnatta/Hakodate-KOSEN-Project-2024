@@ -4,7 +4,7 @@ A Project during 1-month exchange program at Hakodate KOSEN
 
 **Only code of the project are available**
 
-![Machine Overview Image](assets\images\MachineOverview.jpg "Machine Overview Images of Black and White block sorting machine")
+![Machine Overview Image](assets/images/MachineOverview.jpg "Machine Overview Images of Black and White block sorting machine")
 
 Code are avaliable in the following directories:
 
